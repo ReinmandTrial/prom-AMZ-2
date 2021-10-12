@@ -1,0 +1,56 @@
+.btn {
+    background: #f89926;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 13px 15px 14px;
+    width: 100%;
+    font-family: "Amazon Ember";
+    max-width: 335px;
+    // @extend %itemCenter;
+    text-align: center;
+    &:hover {
+        box-shadow: 0px 0px 4px #f89926;
+    }
+    &:focus {
+    }
+    &:active {
+    }
+    &:disabled,
+    &.disabled {
+        background: #e2e2e2;
+        cursor: not-allowed;
+    }
+    &:disabled:hover {
+        box-shadow: none;
+    }
+    &-primary {
+        &:hover {
+        }
+    }
+    &-secondary {
+        &:hover {
+        }
+    }
+    &-contour {
+        &:hover {
+        }
+    }
+    &-filter {
+        &:hover {
+        }
+    }
+}
+input,
+textarea {
+    border: unset;
+    background: transparent;
+    &::placeholder {
+    }
+}
+button {
+    border: unset;
+    padding: unset;
+    cursor: pointer;
+    background: transparent;
+}
