@@ -1,20 +1,18 @@
 
 
 $(document).ready(function () {
-   $('.banner-email__input').keydown(function (e) {
-      if (e.keyCode === 13) {
-         // alert("dfds");
-         $(".banner-email__input").on('keyup', function () {
-            let email = $(this).val();
-            if ((email.length > 0 && (email.match(/.+?\@.+/g) || []).length !== 1) || email == '') {
-               $(".page-main__btn").prop('disabled', true);
-            } else {
-               $(".banner-email").slideUp(800);
-               $(".page-main__btn").prop('disabled', false);
-            }
-         });
+   $('.banner-email__btn').on("click", function () {
+      // alert("dfds");
+      let email = $(".banner-email__input").val();
+      if ((email.length > 0 && (email.match(/.+?\@.+/g) || []).length !== 1) || email == '') {
+         $(".page-main__btn").prop('disabled', true);
+      } else {
+         $(".banner-email").slideUp(800);
+         $(".page-main__btn").prop('disabled', false);
       }
+
    });
+
    $('.js-star-item').mouseover(function () {
       count = 0;
       var i = 0;

@@ -16,6 +16,13 @@
 // MAX-WIDTH 991.98PX breakpoints START
 @media (max-width: 991.98px) {
    .banner-email {
+      &__input-box {
+         flex: none;
+      }
+      &__input {
+         width: 334px;
+         margin-right: 15px;
+      }
       &__content {
          flex-direction: column;
          padding: 30px;
@@ -64,6 +71,15 @@
       }
       &__content {
          padding: 20px 15px 10px;
+      }
+      &__input-box {
+         width: 100%;
+         justify-content: center;
+      }
+      &__input {
+         margin-right: 10px;
+         width: 100%;
+         flex: 0 1 auto;
       }
    }
 }
